@@ -22,6 +22,7 @@ nav.top-nav {
     box-shadow: 0px 4px 4px #0003;
     padding-left: 2em;
     padding-right: 2em;
+    font-family: sans-serif;
 }
 
 .nav-container {
@@ -35,7 +36,6 @@ nav.top-nav {
 }
 
 .nav-name {
-    font-family: sans-serif;
     font-size: 24px;
     margin: 5px;
 }
@@ -60,7 +60,6 @@ nav.top-nav ul {
 }
 
 nav.top-nav li {
-    font-family: sans-serif;
     font-weight: bold;
     color: black;
     margin: 5px;
