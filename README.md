@@ -1,3 +1,3 @@
 # Personal Portfolio Website
 
-Built with pure HTML/CSS
+Built with vanilla HTML/CSS/JS

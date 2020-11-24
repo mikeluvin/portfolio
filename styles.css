@@ -1,0 +1,82 @@
+main {
+    margin-top: 100px;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+nav.top-nav {
+    background-color: rgb(255, 255, 255, 0.7);
+    /* make the navbar always at the top of the screen (even after
+    scrolling), get rid of whitespace--have it go the length of the screen */
+    /* position: relative; would set the position relative to the rest
+    of the html page. You can use negative values!*/
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0px 4px 4px #0003;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.nav-container {
+    user-select: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* space divs evenly, spanning entire width of container */
+    justify-content: space-between;
+}
+
+.nav-name {
+    font-family: sans-serif;
+    font-size: 24px;
+    margin: 5px;
+}
+
+.menu-items {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.socials {
+    padding: 5px;
+}
+.socials a i {
+    padding: 3px;
+}
+
+nav.top-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav.top-nav li {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    margin: 5px;
+    /*sets to horizontal. block allows us to set width and height  */
+    display: inline-block; 
+    padding: 5px;
+    /*prevents the text selection of the menu (when you click and drag and 
+    highlight text) */
+    position: relative;
+}
+
+nav.top-nav li:hover {
+    text-decoration: underline;
+}
+
+nav.top-nav li:active{
+    color: #fff
+}
+
