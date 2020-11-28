@@ -1,7 +1,8 @@
 main {
     margin-top: 100px;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 5em;
+    margin-right: 5em;
+    font-family: sans-serif;
 }
 
 a, a:link, a:visited {
@@ -10,7 +11,7 @@ a, a:link, a:visited {
 }
 
 nav.top-nav {
-    background-color: rgb(255, 255, 255, 0.7);
+    background-color: rgb(255, 255, 255, 0.9);
     /* make the navbar always at the top of the screen (even after
     scrolling), get rid of whitespace--have it go the length of the screen */
     /* position: relative; would set the position relative to the rest
@@ -22,6 +23,8 @@ nav.top-nav {
     box-shadow: 0px 4px 4px #0003;
     padding-left: 2em;
     padding-right: 2em;
+    font-family: sans-serif;
+    z-index: 1;
 }
 
 .nav-container {
@@ -35,7 +38,6 @@ nav.top-nav {
 }
 
 .nav-name {
-    font-family: sans-serif;
     font-size: 24px;
     margin: 5px;
 }
@@ -60,7 +62,6 @@ nav.top-nav ul {
 }
 
 nav.top-nav li {
-    font-family: sans-serif;
     font-weight: bold;
     color: black;
     margin: 5px;
@@ -80,3 +81,62 @@ nav.top-nav li:active{
     color: #fff
 }
 
+.intro-container {
+    /* dimensions are 3372x1339 -> 0.3971 */
+    background-image: url("img/intro.jpg");
+    background-size: cover;
+    height: 520px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.intro-text {
+    position: relative;
+    top: -15px;
+    margin: 50px;
+    width: 40%;
+}
+
+.intro-text h1 {
+    font-size: 40px;
+}
+#projects {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+#projects h1 {
+    font-size: 32px;
+}
+
+.project-entry-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.project-entry-text {
+    text-align: left;
+    width: 400px;
+    padding: 5px;
+}
+
+.project-entry-text a:hover {
+    color: grey;
+}
+.project-entry-img {
+    height: 300px;
+    width: 560px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #0003;
+}
+.project-entry-img img{
+    border-radius: 15px;
+    height: 300px;
+    width: 560px;
+}
