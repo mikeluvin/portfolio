@@ -1,14 +1,23 @@
+html {
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+}
 main {
-    margin-top: 100px;
-    margin-left: 5em;
-    margin-right: 5em;
-    font-family: sans-serif;
+    margin-top: 70px;
+    /* margin-left: 10em;
+    margin-right: 10em; */
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 a, a:link, a:visited {
     text-decoration: none;
     color: black;
 }
+
+/* a:hover {
+    transform: scale(1.2);
+} */
 
 nav.top-nav {
     background-color: rgb(255, 255, 255, 0.9);
@@ -23,7 +32,6 @@ nav.top-nav {
     box-shadow: 0px 4px 4px #0003;
     padding-left: 2em;
     padding-right: 2em;
-    font-family: sans-serif;
     z-index: 1;
 }
 
@@ -39,6 +47,7 @@ nav.top-nav {
 
 .nav-name {
     font-size: 24px;
+    font-weight: bold;
     margin: 5px;
 }
 
@@ -53,7 +62,14 @@ nav.top-nav {
     padding: 5px;
 }
 .socials a i {
+    transition: transform .2s;
     padding: 3px;
+}
+/* if i have time, try to implement zoom for text objects */
+.socials a i:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
 }
 
 nav.top-nav ul {
@@ -85,7 +101,7 @@ nav.top-nav li:active{
     /* dimensions are 3372x1339 -> 0.3971 */
     background-image: url("img/intro.jpg");
     background-size: cover;
-    height: 520px;
+    height: 550px;
     position: relative;
     display: flex;
     align-items: center;
@@ -94,7 +110,7 @@ nav.top-nav li:active{
 .intro-text {
     position: relative;
     top: -15px;
-    margin: 50px;
+    margin: 100px;
     width: 40%;
 }
 
@@ -117,26 +133,105 @@ nav.top-nav li:active{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 50px;
 }
 
 .project-entry-text {
     text-align: left;
-    width: 400px;
-    padding: 5px;
+    width: 30%;
+    padding: 30px;
 }
 
-.project-entry-text a:hover {
+.read-more:hover {
     color: grey;
 }
+
 .project-entry-img {
     height: 300px;
     width: 560px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px #0003;
+    text-align: center;
+    position: relative;
 }
-.project-entry-img img{
+
+.project-entry-img:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: rgba(0,0,0,.5);
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 15px;
+}
+/* .project-entry-img:hover {
+    background-color: black;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+} */
+
+.project-entry-img:hover:after {
+    opacity: 1;
+}
+.project-entry-img img {
     border-radius: 15px;
     height: 300px;
     width: 560px;
+}
+.project-entry-img a {
+    position: relative;
+    bottom: 170px;
+    visibility: hidden;
+    font-size: 20px;
+    user-select: none;
+    color: white;
+    z-index: 1;
+}
+
+/* .project-entry-img a {
+    color: white;
+} */
+
+.project-entry-img:hover a{
+    visibility: visible;
+}
+
+.project-entry-img a:hover{
+    color: lightgrey;
+}
+
+.footer {
+    background-color: lightgrey;
+    height: 300px;
+}
+
+.footer-container {
+    margin: 5em;
+    padding-top: 1.5em;
+    font-size: 125%;
+}
+
+.footer-container h3 {
+    font-weight: normal;
+}
+
+.contact-link {
+    transition: transform .2s;
+}
+.contact-link:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+/* contact page */
+.contact-page {
+    margin-left: 5em;
+    margin-top: 100px;
 }
