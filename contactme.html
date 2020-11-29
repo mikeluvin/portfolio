@@ -3,19 +3,18 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
         <!--icons-->
         <script src="https://kit.fontawesome.com/d340e0cb0a.js" crossorigin="anonymous"></script>
-        <script src="projects.js"></script>
         <title>Mike Luvin's Portfolio</title>
     </head>
 
     <body>
         <nav class="top-nav">
             <div class="nav-container">
-                <div class="nav-name"><a href="index.html">Mike Luvin</a></div>
+                <div class="nav-name"><a href="index.html">Mike Luvin</a> </div>
                 <div class="menu-items">
                     <div class="socials">
                         <a href="https://linkedin.com/in/michael-luvin-68891a181/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
@@ -25,8 +24,8 @@
                     </div>
                     <div>
                         <ul>
-                            <li><a href="index.html" class="selected">Home</a></li>
-                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#projects">Projects</a></li>
                             <!--About Me will be a separate page-->
                             <li><a href="aboutme.html">About Me</a></li>
                             <li><a href="Michael_Luvin_Software_Resume.pdf" target="_blank">Resume</a></li>
@@ -35,33 +34,19 @@
                 </div>
             </div>
         </nav>
-        <main>
-            <div class="intro-container">
-                <div class="intro-text">
-                    <h1>Hi, I'm Mike!</h1>
-                    <p>Currently studying Computer Science and Mechanical Engineering at Northwestern University.</p>
-                    <p><span><a href="aboutme.html" class="read-more">Learn More <i class="fas fa-long-arrow-alt-right"></i></a></p>
-                </div>
-            </div>
-            <section id="projects">
-                <h1>~Projects~</h1>
 
-            </section>
-            <section class="footer">
-                <div class="footer-container">
-                    <h1>Mike Luvin</h1>
-                    <h3>This doesn't have to end here!</h3>
-                    <p>
-                        If you'd like to learn more about me,
-                        fill out <a href="contactme.html" class="contact-link"><u>this short contact form</u></a>
-                    </p>
-                </div>
-            </section>
+        <main>
+            <div class="contact-page">
+                <h1>Hi! Thanks for reaching out. I'm looking forward to chatting with you.</h1>
+                <form>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
         </main>
     </body>
-
-    <script>
-        generateProjects(projects, '#projects');
-    </script>
-
 </html>
