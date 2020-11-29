@@ -6,8 +6,8 @@ main {
     margin-top: 70px;
     /* margin-left: 10em;
     margin-right: 10em; */
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -8px;
+    margin-right: -8px;
 }
 
 a, a:link, a:visited {
@@ -20,7 +20,7 @@ a, a:link, a:visited {
 } */
 
 nav.top-nav {
-    background-color: rgb(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     /* make the navbar always at the top of the screen (even after
     scrolling), get rid of whitespace--have it go the length of the screen */
     /* position: relative; would set the position relative to the rest
@@ -234,4 +234,31 @@ nav.top-nav li:active{
 .contact-page {
     margin-left: 5em;
     margin-top: 100px;
+}
+
+input {
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+textarea {
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    resize: none;
+}
+
+select {
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
