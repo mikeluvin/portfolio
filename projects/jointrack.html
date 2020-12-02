@@ -36,7 +36,92 @@
         </nav>
 
         <main>
+            <section class="project-page-content">
+                <div class="project-title">
+                    <h1><a href="https://jointrack.club" target="_blank">Join NU Track Club</a></h1>
+                    <p><a href="https://jointrack.club" target="_blank" class="read-more"><i><u>(https://jointrack.club)</u></i></a></p>
+                </div>
+                <div class="project-page-img">
+                    <img src="../img/jointrack.JPG">
+                </div>
+                <div class="project-description">
+                    <h2>TL;DR</h2>
+                    <p>If you don't have the time to read my blog-post-esque project description below, here's a quick overview.</p>
+                    <ul>
+                        <li>Wanted to improve integration of new members into NU Track Club's communication stream</li>
+                        <li>So a teammate and I created a sign up page for NU Track Club to accomplish this</li>
+                        <li>Users sign in to their NU Gmail through Google Auth, which adds them to the Listserv (mailing list)</li>
+                        <li>Users then sign in to their GroupMe account, adding them to the NUTC GroupMe</li>
+                        <li>Finally, users are provided a link to IMLeagues to sign up to become a member of Track Club</li>
+                    </ul>
+                    <p>What did <i>I</i> do, in terms of <b>development?</b></p>
+                    <ul>
+                        <li>Utilized the GroupMe Developers' API to add an authenicated user to the NUTC GroupMe
+                            <ul>
+                                <li>Verified that the user had an NU email address with the Google API</li>
+                                <li>Parsed user information returned by GroupMe API to create the HTTP POST request
+                                    to add the user to the GroupMe
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Implemented a SQLite database that stores all the users who have signed up through jointrack.club with their UTC timestamp
+                            <ul>
+                                <li>Included methods for adminstrative actions, such as adding page abusers to the blocked list</li>
+                            </ul>
+                        </li>
+                        <li>
+                        </li>
+                    
+                    </ul>
+                    <p>Now...if you'd like to read more, continue below!</p>                        
 
+                    <h2>Background</h2>
+                    <!--probably want to put in a pic for each section-->
+                    <p>
+                        A fellow NUTC Member (well, 2020 grad), John Laboe, wanted to create an all-in-one sign up page for the club.
+                        When a new member joins, they provide us their email for our mailing list and their phone number so they can be added
+                        to our GroupMe. They must also sign up for the club on IMLeagues in order to attend practice. <br><br>
+                        Manually adding everyone to our mailing list and GroupMe is a bit of a hassle--why not have a sign up page to 
+                        streamline the process?                      
+
+                    </p>
+                    <h2>Development</h2>
+                    <p>
+                        Join Track was my first web development project ever. I had just decided to switch my focus to Software Engineering the
+                        month before (in June 2020), after realizing how much I enjoyed programming. Was I behind my peers since I didn't take a CS
+                        class until my sophomore year? Yes, but I knew I could make up the gap because of how passionate I am about CS. To complete Join Track,
+                        I knew that I would have to learn a lot on my own (with some guidance from John, of course), and I was excited for the challenge. 
+                    </p>
+                    <h3>An API...what's that?</h3>
+                    <p>
+                        My first task was to use the GroupMe Developers' API to add a user to the NUTC GroupMe. John told me that I needed to set up a 
+                        Python Flask server to do so. He sent me links the GM API and Flask documentation, and then I was on my own. 
+                        <ul>
+                            <li>React</li>
+                            <li>Flask server</li>
+                            <li>SQLite database</li>
+                            <li>admin frontend + backend</li>
+                        </ul>
+                        I wanted to add a feature to automatically add a user to our Strava club, but unfortunately the Strava
+                        Developers API does not have an endpoint to do so.
+                    </p>
+                    <h2>Results</h2>
+                    <p>
+
+                    </p>
+                </div>
+            </section>
+
+            <section class="footer">
+                <div class="footer-container">
+                    <h1>Mike Luvin</h1>
+                    <h3>This doesn't have to end here!</h3>
+                    <p>
+                        If you'd like to learn more about me,
+                        fill out <a href="../contactme.html" class="contact-link"><u>this short contact form.</u></a>
+                    </p>
+                </div>
+            </section>
         </main>
     </body>
 </html>

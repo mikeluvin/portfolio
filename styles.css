@@ -9,6 +9,9 @@ main {
     margin-left: -8px;
     margin-right: -8px;
 }
+p {
+    font-size: 18px;
+}
 
 a, a:link, a:visited {
     text-decoration: none;
@@ -46,7 +49,7 @@ nav.top-nav {
 }
 
 .nav-name {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     margin: 5px;
 }
@@ -133,7 +136,8 @@ nav.top-nav li:active{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding-top: 10px;
+    padding-bottom: 70px;
 }
 
 .project-entry-text {
@@ -208,13 +212,14 @@ nav.top-nav li:active{
 }
 
 .footer {
-    background-color: lightgrey;
-    height: 300px;
+    background-color:  #7ae0ff;
+    height: 250px;
+    color: white;
 }
 
 .footer-container {
-    margin: 5em;
-    padding-top: 1.5em;
+    margin: 100px;
+    padding-top: 1.2em;
     font-size: 125%;
 }
 
@@ -222,17 +227,17 @@ nav.top-nav li:active{
     font-weight: normal;
 }
 
-.contact-link {
-    transition: transform .2s;
-}
-.contact-link:hover {
+.contact-link, .contact-link:link, .contact-link:visited {
     color: white;
-    transform: scale(1.2);
+}
+
+.contact-link:hover {
+    color: black;
 }
 
 /* contact page */
 .contact-page {
-    margin-left: 5em;
+    margin-left: 100px;
     margin-top: 100px;
 }
 
@@ -250,7 +255,6 @@ textarea {
     font-size: 14px;
     font-family: 'Quicksand', sans-serif;
     padding: 5px;
-    margin-bottom: 10px;
     border-radius: 5px;
     resize: none;
 }
@@ -261,6 +265,22 @@ select {
     padding: 5px;
     margin-bottom: 10px;
     border-radius: 5px;
+}
+
+.button {
+    background-color:  #7ae0ff;/* #6fc9fc; */
+    font-weight: bold;
+    border-radius: 2em;
+    color: white;
+    padding: 0.5em 1.5em;
+    border: none;
+    /* taken from https://www.w3schools.com/css/css3_buttons.asp */
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 3px 5px 0 rgba(0,0,0,0.19);
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: #60b2e0;
 }
 
 /* aboutme page */
@@ -281,4 +301,52 @@ select {
 
 .aboutme-text {
     padding-left: 80px;
+}
+
+/* individual project pages */
+.project-page-content {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 750px;
+}
+
+.project-page-content h2 {
+    font-size: 28px;
+    margin-top: 50px;
+}
+
+.project-page-content h3 {
+    font-size: 24px;
+    
+}
+.project-title {
+    position: relative;
+    text-align: center;
+    top: 30px;
+}
+
+.project-title h1 {
+    font-size: 36px;
+    margin-bottom: 0px;
+}
+
+.project-title p {
+    margin-top: 0px;
+}
+
+
+.project-page-img img{
+    width: 750px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.project-description {
+    margin-top: 50px;
+    line-height: 175%;
+}
+
+.project-description li, p  {
+    font-size: 18px;
 }
