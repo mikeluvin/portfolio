@@ -45,9 +45,11 @@
                 <div>
                     <form onsubmit="validateForm()">
                         <label for="fname">First name:*</label><br>
-                        <input type="text" id="fname" name="fname" placeholder="First Name" required aria-required="true"><br>
+                        <input type="text" id="fname" name="fname" placeholder="First Name" onchange="validateName('fname')" required aria-required="true">
+                        <span id="fname-error-text"></span><br>
                         <label for="lname">Last name:*</label><br>
-                        <input type="text" id="lname" name="lname" placeholder="Last Name" required aria-required="true"><br>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name" onchange="validateName('lname')"required aria-required="true">
+                        <span id="lname-error-text"></span><br>
                         <label for="user-email">Your email:*</label><br>
                         <input type="email" id="user-email" name="user-email" placeholder="Your email" onchange="validateEmail()" required aria-required="true">
                         <span id="email-error-text"></span><br>
@@ -60,7 +62,7 @@
                             <option value="recruiter">Recruiter</option>
                             <option value="student">Student</option>
                             <option value="other">Other</option>
-                        </select><br>
+                        </select>
                         <label for="msg">Message:*</label><br>
                         <textarea rows="8" cols="60 "id="msg" name="msg" placeholder="Your Message Here" required aria-required="true"></textarea><br>
                         <span>* = Required</span><br><br>

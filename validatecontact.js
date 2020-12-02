@@ -1,3 +1,14 @@
+function validateName(nameId) {
+    var name = document.getElementById(nameId).value;
+    if (!name.replace(/\s/g, '').length) {
+        document.getElementById(nameId).style.borderColor = "red";
+        document.getElementById(nameId + "-error-text").innerHTML = "Please enter a name";
+    } else {
+        document.getElementById(nameId).style.borderColor = "black";
+        document.getElementById(nameId + "-error-text").innerHTML = "";
+    } 
+}
+
 function validateEmail() {
     var email = document.getElementById("user-email").value;
     if (!email.includes("@")) {
