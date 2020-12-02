@@ -13,50 +13,59 @@
     </head>
 
     <body>
-        <nav class="top-nav">
-            <div class="nav-container">
-                <div class="nav-name"><a href="index.html">Mike Luvin</a></div>
-                <div class="menu-items">
-                    <div class="socials">
-                        <a href="https://linkedin.com/in/michael-luvin-68891a181/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-                        <a href="https://github.com/mikeluvin" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=100010686095498" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
-                        <a href="mailto:michaelluvin2022@u.northwestern.edu" target="_blank"><i class="far fa-envelope fa-lg"></i></a>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><a href="index.html" class="selected">Home</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <!--About Me will be a separate page-->
-                            <li><a href="aboutme.html">About Me</a></li>
-                            <li><a href="Michael_Luvin_Software_Resume.pdf" target="_blank">Resume</a></li>
-                        </ul>
+        <header>
+            <nav class="top-nav" role="menubar" aria-label="Main Navigation">
+                <div class="nav-container">
+                    <div class="nav-name" role="menuitem"><a href="index.html">Mike Luvin</a></div>
+                    <div class="menu-items">
+                        <div class="socials">
+                            <a href="https://linkedin.com/in/michael-luvin-68891a181/" target="_blank" role="menuitem"><i class="fab fa-linkedin fa-lg"></i></a>
+                            <a href="https://github.com/mikeluvin" target="_blank" role="menuitem"><i class="fab fa-github fa-lg"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100010686095498" target="_blank" role="menuitem"><i class="fab fa-facebook fa-lg"></i></a>
+                            <a href="mailto:michaelluvin2022@u.northwestern.edu" target="_blank" role="menuitem"><i class="far fa-envelope fa-lg"></i></a>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="index.html" role="menuitem" class="selected">Home</a></li>
+                                <li><a href="#projects" role="menuitem">Projects</a></li>
+                                <!--About Me will be a separate page-->
+                                <li><a href="aboutme.html" role="menuitem">About Me</a></li>
+                                <li><a href="Michael_Luvin_Software_Resume.pdf" target="_blank" role="menuitem">Resume</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
         <main>
-            <div class="intro-container">
+            <div class="intro-container" aria-label="Intro Image and Text">
+                <span role="img" aria-label="Background photo, a headshot of Mike Luvin on the Northwestern Lakefill"> </span>
                 <div class="intro-text">
                     <h1>Hi, I'm Mike!</h1>
-                    <p>Currently studying Computer Science and Mechanical Engineering at Northwestern University.</p>
+                    <p>
+                        I'm an aspiring software engineer studying Computer Science and Mechanical Engineering at Northwestern University. I strive to make
+                        people's lives better through software.
+                    </p>
                     <p><span><a href="aboutme.html" class="read-more">Learn More <i class="fas fa-long-arrow-alt-right"></i></a></p>
                 </div>
             </div>
-            <section id="projects">
+            <section id="projects" aria-label="Project List">
                 <h1>~Projects~</h1>
 
             </section>
-            <section class="footer">
+            <footer>
                 <div class="footer-container">
                     <h1>Mike Luvin</h1>
-                    <h3>This doesn't have to end here!</h3>
+                    <h3><i>This doesn't have to end here!</i></h3>
                     <p>
                         If you'd like to learn more about me,
-                        fill out <a href="contactme.html" class="contact-link"><u>this short contact form</u></a>
+                        fill out <a href="contactme.html" class="contact-link"><u>this short contact form.</u></a>
+                    </p>
+                    <p>
+                        Or, you can shoot me an email at <a href="mailto:michaelluvin2022@u.northwestern.edu" class="contact-link"><u>michaelluvin2022@u.northwestern.edu</u></a>
                     </p>
                 </div>
-            </section>
+            </footer>
         </main>
     </body>
 

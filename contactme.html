@@ -8,56 +8,83 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
         <!--icons-->
         <script src="https://kit.fontawesome.com/d340e0cb0a.js" crossorigin="anonymous"></script>
+        <script src="validatecontact.js"></script>
         <title>Mike Luvin's Portfolio</title>
     </head>
 
     <body>
-        <nav class="top-nav">
-            <div class="nav-container">
-                <div class="nav-name"><a href="index.html">Mike Luvin</a> </div>
-                <div class="menu-items">
-                    <div class="socials">
-                        <a href="https://linkedin.com/in/michael-luvin-68891a181/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-                        <a href="https://github.com/mikeluvin" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=100010686095498" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
-                        <a href="mailto:michaelluvin2022@u.northwestern.edu" target="_blank"><i class="far fa-envelope fa-lg"></i></a>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="index.html#projects">Projects</a></li>
-                            <!--About Me will be a separate page-->
-                            <li><a href="aboutme.html">About Me</a></li>
-                            <li><a href="Michael_Luvin_Software_Resume.pdf" target="_blank">Resume</a></li>
-                        </ul>
+        <header>
+            <nav class="top-nav" role="menubar" aria-label="Main Navigation">
+                <div class="nav-container">
+                    <div class="nav-name" role="menuitem"><a href="index.html">Mike Luvin</a></div>
+                    <div class="menu-items">
+                        <div class="socials">
+                            <a href="https://linkedin.com/in/michael-luvin-68891a181/" target="_blank" role="menuitem"><i class="fab fa-linkedin fa-lg"></i></a>
+                            <a href="https://github.com/mikeluvin" target="_blank" role="menuitem"><i class="fab fa-github fa-lg"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100010686095498" target="_blank" role="menuitem"><i class="fab fa-facebook fa-lg"></i></a>
+                            <a href="mailto:michaelluvin2022@u.northwestern.edu" target="_blank" role="menuitem"><i class="far fa-envelope fa-lg"></i></a>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="index.html" role="menuitem">Home</a></li>
+                                <li><a href="index.html#projects" role="menuitem">Projects</a></li>
+                                <!--About Me will be a separate page-->
+                                <li><a href="aboutme.html" role="menuitem">About Me</a></li>
+                                <li><a href="Michael_Luvin_Software_Resume.pdf" target="_blank" role="menuitem">Resume</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-
+            </nav>
+        </header>
         <main>
-            <div class="contact-page">
+            <div class="contactme-title">
                 <h1>Hi! Thanks for reaching out. I'm looking forward to chatting with you.</h1>
-                <form>
-                    <label for="fname">First name:</label><br>
-                    <input type="text" id="fname" name="fname" placeholder="First Name" required><br>
-                    <label for="lname">Last name:</label><br>
-                    <input type="text" id="lname" name="lname" placeholder="Last Name" required><br>
-                    <label for="user-email">Your email:</label><br>
-                    <input type="email" id="user-email" name="user-email" placeholder="Your email" required><br>
-                    <label for="you-are">You are a(n):</label><br>
-                    <select name="you-are" id="you-are" required>
-                        <option value="company-employee">Company employee</option>
-                        <option value="recruiter">Recruiter</option>
-                        <option value="student">Student</option>
-                        <option value="other">Other</option>
-                    </select><br>
-                    <label for="msg">Message:</label><br>
-                    <textarea rows="8" cols="60 "id="msg" name="msg" placeholder="Your Message Here" required></textarea><br>
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
-                </form>
             </div>
+            <div class="contact-page">
+                <div>
+                    <form onsubmit="validateForm()">
+                        <label for="fname">First name:*</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="First Name" required aria-required="true"><br>
+                        <label for="lname">Last name:*</label><br>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name" required aria-required="true"><br>
+                        <label for="user-email">Your email:*</label><br>
+                        <input type="email" id="user-email" name="user-email" placeholder="Your email" onchange="validateEmail()" required aria-required="true">
+                        <span id="email-error-text"></span><br>
+                        <label for="you-are">You are a(n):*</label><br>
+                        <select name="you-are" id="you-are" required aria-required="true">
+                            <option value="none" selected disabled hidden> 
+                                Select
+                            </option>
+                            <option value="company-employee">Company employee</option>
+                            <option value="recruiter">Recruiter</option>
+                            <option value="student">Student</option>
+                            <option value="other">Other</option>
+                        </select><br>
+                        <label for="msg">Message:*</label><br>
+                        <textarea rows="8" cols="60 "id="msg" name="msg" placeholder="Your Message Here" required aria-required="true"></textarea><br>
+                        <span>* = Required</span><br><br>
+                        <input class="button" type="submit" value="Submit">
+                        <input class="button" type="reset" value="Reset">
+                    </form>
+                </div>
+                <div>
+                    <img class="contact-pg-img" src="img/hello.gif" alt="GIF of a walrus popping out of the water saying hi">
+                </div>
+            </div>
+            <footer>
+                <div class="footer-container">
+                    <h1>Mike Luvin</h1>
+                    <h3><i>This doesn't have to end here!</i></h3>
+                    <p>
+                        If you'd like to learn more about me,
+                        fill out <a href="contactme.html" class="contact-link"><u>this short contact form.</u></a>
+                    </p>
+                    <p>
+                        Or, you can shoot me an email at <a href="mailto:michaelluvin2022@u.northwestern.edu" class="contact-link"><u>michaelluvin2022@u.northwestern.edu</u></a>
+                    </p>
+                </div>
+            </footer>
         </main>
     </body>
 </html>
