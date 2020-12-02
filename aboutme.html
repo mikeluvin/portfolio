@@ -12,63 +12,72 @@
     </head>
 
     <body>
-        <nav class="top-nav">
-            <div class="nav-container">
-                <div class="nav-name"><a href="index.html">Mike Luvin</a> </div>
-                <div class="menu-items">
-                    <div class="socials">
-                        <a href="https://linkedin.com/in/michael-luvin-68891a181/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-                        <a href="https://github.com/mikeluvin" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=100010686095498" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
-                        <a href="mailto:michaelluvin2022@u.northwestern.edu" target="_blank"><i class="far fa-envelope fa-lg"></i></a>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="index.html#projects">Projects</a></li>
-                            <!--About Me will be a separate page-->
-                            <li><a href="aboutme.html">About Me</a></li>
-                            <li><a href="Michael_Luvin_Software_Resume.pdf" target="_blank">Resume</a></li>
-                        </ul>
+        <header>
+            <nav class="top-nav" role="menubar" aria-label="Main Navigation">
+                <div class="nav-container">
+                    <div class="nav-name" role="menuitem"><a href="index.html">Mike Luvin</a></div>
+                    <div class="menu-items">
+                        <div class="socials">
+                            <a href="https://linkedin.com/in/michael-luvin-68891a181/" target="_blank" role="menuitem"><i class="fab fa-linkedin fa-lg"></i></a>
+                            <a href="https://github.com/mikeluvin" target="_blank" role="menuitem"><i class="fab fa-github fa-lg"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100010686095498" target="_blank" role="menuitem"><i class="fab fa-facebook fa-lg"></i></a>
+                            <a href="mailto:michaelluvin2022@u.northwestern.edu" target="_blank" role="menuitem"><i class="far fa-envelope fa-lg"></i></a>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="index.html" role="menuitem">Home</a></li>
+                                <li><a href="index.html#projects" role="menuitem">Projects</a></li>
+                                <!--About Me will be a separate page-->
+                                <li><a href="aboutme.html" role="menuitem" class="selected">About Me</a></li>
+                                <li><a href="Michael_Luvin_Software_Resume.pdf" target="_blank" role="menuitem">Resume</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-
+            </nav>
+        </header>
         <main>
             <section>
-                <div class="aboutme-container">                  
+                <div class="aboutme-container" aria-label="About Me">                  
                     <div>
-                        <img src="img/aboutme.jpg" class="aboutme-pic">
+                        <img src="img/aboutme.jpg" class="aboutme-pic" alt="Circular headshot of Mike Luvin">
                     </div>
                     <div class="aboutme-text">
-                        <h1>Hi!</h1>
+                        <h1>Hi! &#128075;</h1>
                         <p>
                             As you know, my name is Mike Luvin. I'm a junior at Northwestern University studying Computer
-                            Science and Mechanical Engineering. 
-                            This really do be some placeholder text right now cause i don't feel like writing
-                            the actual about me blurb yet <br>
-                            This really do be some placeholder text right now cause i don't feel like writing
-                            the actual about me blurb yet <br>
-                            This really do be some placeholder text right now cause i don't feel like writing
-                            the actual about me blurb yet <br>
-                            This really do be some placeholder text right now cause i don't feel like writing
-                            the actual about me blurb yet <br>
+                            Science and Mechanical Engineering.
+                        </p>
+                        <p>
+                            After coming into college as a Mechanical Engineering major who had never seen a line of code
+                            prior to fall of freshman year, I've fallen in love with programming. Rather than drop the Mechanical
+                            Engineering major, I've decided to complete the BS/MS Program and earn the Masters in Computer
+                            Science.
+                        </p>
+                        <p>
+                            If you'd like to learn more about me, to chat, etc., either fill out <a href="contactme.html" class="read-more"><u>this short contact form</u></a>
+                            or shoot me an email me at <a href="mailto:michaelluvin2022@u.northwestern.edu" class="read-more"><u>michaelluvin2022@u.northwestern.edu</u></a>.
 
+                        </p>
+                        <p>
+                            I'm currently seeking Software Engineering Intern roles for Summer 2021.
                         </p>
                     </div>
                 </div>
             </section>
-            <section class="footer">
+            <footer>
                 <div class="footer-container">
                     <h1>Mike Luvin</h1>
-                    <h3>This doesn't have to end here!</h3>
+                    <h3><i>This doesn't have to end here!</i></h3>
                     <p>
                         If you'd like to learn more about me,
                         fill out <a href="contactme.html" class="contact-link"><u>this short contact form.</u></a>
                     </p>
+                    <p>
+                        Or, you can shoot me an email at <a href="mailto:michaelluvin2022@u.northwestern.edu" class="contact-link"><u>michaelluvin2022@u.northwestern.edu</u></a>
+                    </p>
                 </div>
-            </section>
+            </footer>
         </main>
     </body>
 </html>

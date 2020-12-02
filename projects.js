@@ -6,16 +6,18 @@ var projects = [
 {
     name: "Join NU Track Club",
     date: "Summer 2020",
-    description: "Developed a sign up page for NU Track Club",
+    description: "Developed a sign up page for NU Track Club to add new members to our mailing list and GroupMe.",
     link: "projects/jointrack.html",
     image: "img/jointrack.JPG",
+    alt: "Picture of jointrack.club homepage"
 },
 {
     name: "Pace Calculator",
     date: "Summer 2020",
-    description: "Made a new running pace calculator after my favorite one was taken down",
+    description: "Made a new running pace calculator after my favorite one was taken down.",
     link: "projects/pacecalc.html",
     image: "img/pacecalc.JPG",
+    alt: "Picture of pacecalcnu.com webpage"
 },
 /* starting w two for now
 {
@@ -40,7 +42,7 @@ function generateProjects(projects, projectSelector) {
                         <p><a href="${project.link}" class="read-more">Read More <i class="fas fa-long-arrow-alt-right"></i></a></p>
                     </div>
                     <div class="project-entry-img">
-                        <img src="${project.image}">
+                        <img src="${project.image}" alt=${project.alt}>
                         <a href="${project.link}">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
                 </div>`;

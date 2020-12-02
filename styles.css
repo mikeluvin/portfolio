@@ -4,8 +4,6 @@ html {
 }
 main {
     margin-top: 70px;
-    /* margin-left: 10em;
-    margin-right: 10em; */
     margin-left: -8px;
     margin-right: -8px;
 }
@@ -18,16 +16,8 @@ a, a:link, a:visited {
     color: black;
 }
 
-/* a:hover {
-    transform: scale(1.2);
-} */
-
 nav.top-nav {
     background-color: rgba(255, 255, 255, 0.9);
-    /* make the navbar always at the top of the screen (even after
-    scrolling), get rid of whitespace--have it go the length of the screen */
-    /* position: relative; would set the position relative to the rest
-    of the html page. You can use negative values!*/
     position: fixed;
     top: 0px;
     left: 0px;
@@ -68,7 +58,7 @@ nav.top-nav {
     transition: transform .2s;
     padding: 3px;
 }
-/* if i have time, try to implement zoom for text objects */
+
 .socials a i:hover {
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
@@ -82,23 +72,27 @@ nav.top-nav ul {
 
 nav.top-nav li {
     font-weight: bold;
-    color: black;
+    color: rgb(161, 161, 161);
     margin: 5px;
-    /*sets to horizontal. block allows us to set width and height  */
     display: inline-block; 
     padding: 5px;
-    /*prevents the text selection of the menu (when you click and drag and 
-    highlight text) */
     position: relative;
 }
 
-nav.top-nav li:hover {
-    text-decoration: underline;
+nav.top-nav li a:visited {
+    color: rgb(161, 161, 161);
 }
 
-nav.top-nav li:active{
-    color: #fff
+nav.top-nav li a:hover {
+    color: black;
 }
+
+.selected {
+    color: black !important;
+}
+/* nav.top-nav li:active{
+    color: #fff
+} */
 
 .intro-container {
     /* dimensions are 3372x1339 -> 0.3971 */
@@ -211,15 +205,15 @@ nav.top-nav li:active{
     color: lightgrey;
 }
 
-.footer {
+footer {
     background-color:  #7ae0ff;
-    height: 250px;
+    height: 280px;
     color: white;
 }
 
 .footer-container {
     margin: 100px;
-    padding-top: 1.2em;
+    padding-top: 0.8em;
     font-size: 125%;
 }
 
@@ -236,9 +230,22 @@ nav.top-nav li:active{
 }
 
 /* contact page */
+.contactme-title {
+    text-align: center;
+    padding-top: 10px;
+}
 .contact-page {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-pg-img {
+    width: 400px;
     margin-left: 100px;
-    margin-top: 100px;
+    border-radius: 15px;
 }
 
 input {
@@ -288,19 +295,26 @@ select {
     position: relative;
     display: flex;
     flex-direction: row;
-    margin-left: 5em;
-    margin-top: 100px;
+    margin: auto;
+    width: 1100px;
+    margin-top: 120px;
     justify-content: center;
+    align-items: center;
+    line-height: 175%;
 }
 
 .aboutme-pic {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
 }
 
 .aboutme-text {
     padding-left: 80px;
+}
+
+.aboutme-text h1 {
+    font-size: 32px;
 }
 
 /* individual project pages */
@@ -312,22 +326,25 @@ select {
 }
 
 .project-page-content h2 {
-    font-size: 28px;
+    font-size: 32px;
     margin-top: 50px;
+    margin-bottom: -5px;
 }
 
 .project-page-content h3 {
     font-size: 24px;
+    margin-bottom: -5px;
     
 }
 .project-title {
     position: relative;
     text-align: center;
     top: 30px;
+    padding-bottom: 40px;
 }
 
 .project-title h1 {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 0px;
 }
 
@@ -335,11 +352,9 @@ select {
     margin-top: 0px;
 }
 
-
 .project-page-img img{
     width: 750px;
     border-radius: 20px;
-    margin-top: 40px;
 }
 
 .project-description {
