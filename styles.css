@@ -79,7 +79,7 @@ nav.top-nav li {
     position: relative;
 }
 
-nav.top-nav li a:visited {
+nav.top-nav li a, li a:link, li a:visited {
     color: rgb(161, 161, 161);
 }
 
@@ -233,6 +233,8 @@ footer {
 .contactme-title {
     text-align: center;
     padding-top: 10px;
+    margin: auto;
+    width: 1025px;
 }
 .contact-page {
     margin: auto;
